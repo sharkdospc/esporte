@@ -8,11 +8,11 @@ $app = AppFactory::create();
 $app->addBodyParsingMiddleware();
 
 $esportes = [
-    ['id' => 1, 'nome' => 'Futebol', 'jogadores' => 11, 'olimpico' => true],
-    ['id' => 2, 'nome' => 'Basquete', 'jogadores' => 5, 'olimpico' => true],
-    ['id' => 3, 'nome' => 'Vôlei', 'jogadores' => 6, 'olimpico' => true],
-    ['id' => 4, 'nome' => 'Tênis', 'jogadores' => 2, 'olimpico' => true],
-    ['id' => 5, 'nome' => 'Natação', 'jogadores' => 1, 'olimpico' => true]
+    ['id' => 1, 'nome' => 'futebol', 'jogadores' => 11, 'olimpico' => true],
+    ['id' => 2, 'nome' => 'basquete', 'jogadores' => 5, 'olimpico' => true],
+    ['id' => 3, 'nome' => 'vôlei', 'jogadores' => 6, 'olimpico' => true],
+    ['id' => 4, 'nome' => 'tênis', 'jogadores' => 2, 'olimpico' => true],
+    ['id' => 5, 'nome' => 'natação', 'jogadores' => 1, 'olimpico' => true]
 ];
 
 $app->get('/esportes', function ($request, $response) use ($esportes) {
